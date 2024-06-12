@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Varela+Round&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+nav {
+  height: 80px;
+  width: 100%;
+  color: white;
+  background-color: rgb(42, 165, 155);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav h1 {
+  font-family: "Roboto";
+  font-size: 3vw;
+}
+.game-con {
+  display: flex;
+  justify-content: center;
+  margin-top: 5vw;
+}
+.container {
+  position: relative;
+  width: 50%;
+  justify-content: center;
+  display: grid;
+  grid-template-rows: repeat(3, 10vw);
+  grid-template-columns: repeat(3, 10vw);
+}
+.box {
+  font-family: "Roboto";
+  border: 1px solid black;
+  font-size: 10vw;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box:hover {
+  background-color: rgba(93, 192, 184, 0.397);
+  cursor: pointer;
+}
+.game-info {
+  width: 50%;
+  margin: auto;
+  padding: 4vw;
+}
+.game-info h1 {
+  font-size: 3vw;
+  text-align: center;
+  font-family: "Roboto";
+}
+.infor {
+  margin: 2vw;
+  display: flex;
+  gap: 2vw;
+  align-items: center;
+}
+.info {
+  font-size: 2vw;
+  font-family: "Roboto";
+}
+#reset {
+  color: white;
+  font-family: "Roboto";
+  background-color: rgba(42, 165, 155, 0.671);
+  width: 7vw;
+  padding: 3px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 1.5vw;
+}
+#reset a {
+  color: white;
+  text-decoration: none;
+}
+#reset a:hover {
+  color: black;
+}
+#reset:hover {
+  background-color: white;
+  border: 2px solid rgba(72, 173, 165, 0.781);
+  color: black;
+  cursor: pointer;
+}
+.imgbox {
+  display: flex;
+  align-items: center;
+}
+.imgbox img {
+  height: 0;
+  transition: height 1s ease-in;
+}
+.br-0 {
+  border-bottom: 0;
+}
+.br-1 {
+  border-top: 0;
+}
+.br-2 {
+  border-left: 0;
+}
+.br-3 {
+  border-right: 0;
+}
+.line {
+  left: 19%;
+  background-color: black;
+  height: 8px;
+  border-radius: 4px;
+  width: 0;
+  position: absolute;
+  background-color: rgb(42, 165, 155);
+  transition: width 1s ease-in-out;
+}
+@media (max-width: 600px) {
+  nav h1 {
+    font-size: 6vw;
+  }
+  .game-con {
+    flex-direction: column;
+  }
+  .container {
+    justify-content: center;
+    width: 100%;
+    grid-template-rows: repeat(3, 20vw);
+
+    grid-template-columns: repeat(3, 20vw);
+  }
+  .box {
+    font-size: 16vw;
+  }
+  .game-info {
+    width: 100%;
+    padding: 10vw;
+  }
+  .game-info h1 {
+    font-size: 6vw;
+    text-align: center;
+  }
+  .infor {
+    justify-content: center;
+  }
+  .info {
+    font-size: 4vw;
+  }
+  #reset {
+    width: 14vw;
+    padding: 6px;
+    font-size: 4vw;
+  }
+  .imgbox {
+    justify-content: center;
+  }
+}
+@media (max-width: 1000px) and (min-width: 600px) {
+  nav h1 {
+    font-size: 5vw;
+  }
+  .game-con {
+    flex-direction: column;
+  }
+  .container {
+    justify-content: center;
+    width: 100%;
+    grid-template-rows: repeat(3, 17vw);
+
+    grid-template-columns: repeat(3, 17vw);
+  }
+  .box {
+    font-size: 13vw;
+  }
+  .game-info {
+    width: 100%;
+    padding: 8vw;
+  }
+  .game-info h1 {
+    font-size: 6vw;
+    text-align: center;
+  }
+  .infor {
+    justify-content: center;
+  }
+  .info {
+    font-size: 4vw;
+  }
+  #reset {
+    width: 14vw;
+    padding: 6px;
+    font-size: 4vw;
+  }
+  .imgbox {
+    justify-content: center;
+  }
+}
